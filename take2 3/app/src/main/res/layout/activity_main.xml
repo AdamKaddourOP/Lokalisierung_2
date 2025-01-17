@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <!-- Label for Accelerometer Frequency -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer Frequency"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Spinner for Accelerometer -->
+        <Spinner
+            android:id="@+id/accelerometerFrequencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Label for Gyroscope Frequency -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gyroscope Frequency"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Spinner for Gyroscope -->
+        <Spinner
+            android:id="@+id/gyroscopeFrequencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Label for Magnetometer Frequency -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Magnetometer Frequency"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Spinner for Magnetometer -->
+        <Spinner
+            android:id="@+id/magnetometerFrequencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startStopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Collection"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startTrackingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Tracking"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/newButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Data"
+            android:layout_marginBottom="16dp" />
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/accelerometerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Accelerometer data will appear here..." />
+
+        <TextView
+            android:id="@+id/gyroscopeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Gyroscope data will appear here..." />
+
+        <TextView
+            android:id="@+id/magnetometerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Magnetometer data will appear here..." />
+
+    </LinearLayout>
+</ScrollView>
